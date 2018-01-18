@@ -34,47 +34,86 @@ the only implementation.
 - A main tool among Data scientists
 
 # What do you need to know about R?
-- In this course not much. We intend the methods we will
-describe to be usable by researchers with little experience in R
+- In this course not much.
+    - Tiny bits of programming
+    - Cookbook method
 
-- Tiny bits of programming
-- Cookbook method
+    - Strongly advised to learn about R (or Python) if you
+want to do data science
 
-- But it is strongly advised that you learn more about R if you
-want to do more in data science.
+# Let's get started
 
 - First use of R and RStudio
-- We will use the environment RStudio for our work in R
+    - We will use the environment RStudio for our work in R
 
 - What is the difference?
     - R is the program interpreter. Does the job.
     - RStudio is a "front end" that makes it easier to use R.
 
+- RStudio requires R.
+
 # Meet RStudio!
 
 - RStudio has 4 panels:
 
-Console: This is the actual R window, you can enter commands here and execute them by pressing enter
-Source: This is where we can edit scripts. It is where you do most of your work Control-enter sends selected codes to the console
-Plots/Help: This is where plots and help pages will be shown
-Workspace: Shows which objects you currently have
+    - Console: This is the actual R window, you can enter commands here and execute them by pressing enter
+    - Source: This is where we can edit scripts. It is where you do most of your work Control-enter sends selected codes to the console
+    - Plots/Help: This is where plots and help pages will be shown
+    - Workspace: Shows which objects you currently have
     - Anything following a # symbol is treated as a comment!## R Markdown
 
 # R as calculator
 
 - You can use R as a calculator
 
-![(materials/seminar-1-r-calculator1.png)
+![](./materials/seminar-1-r-calculator-1.png)
 
 
 # In R, everything has a name
 
 - Assign and use objects
+
     - The <- operator can be used to store values into objects
     - An object can contain anything in R
     - R expressions that are not stored in an object are printed
 
 - Object names are...
+
     - Unique: If you use the same name, the old will be *overwritten*
     - Sensitive: MyData is *not the same* as mydata
+
+# We can use R as a calculator
+
+![](./materials/seminar-1-r-calculator-1.png)
+
+
+# Numeric and character data
+
+- In R, there are several types of data:
+
+    - Numeric: numbers of all kinds
+    - Character: one of more text character (which may be a number!)
+        - Multiple characters in a row = strings
+    - Logical: TRUE or FALSE
+
+# Numeric data
+
+![](./materials/seminar-1-r-numbers.png)
+
+
+# Character data
+
+![](./materials/seminar-1-r-strings.png)
+
+
+# Assigning stuff to objects
+
+![](./materials/seminar-1-assignment.png)
+
+
+
+# Nano data science!
+
+- Let us do something REAL!
+
 
