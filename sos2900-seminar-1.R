@@ -1,6 +1,7 @@
 ###
 ### SEMINAR 1: Read data, look at data, model data, predict from model
 ###
+<<<<<<< HEAD
 # Load necessary packages
 library(tidyverse)
 library(here)
@@ -34,3 +35,10 @@ p + geom_line(color="gray70", aes(group = country)) +
     labs(x = "Year",
          y = "GDP per capita",
          title = "GDP per capita on Five Continents")
+=======
+library(data.table)
+library(tidyverse)
+library(here)
+
+mydata <- fread(file = "./college.csv")
+>>>>>>> bf146e463bc3508ab757ae0264a453b5afc7e1b6

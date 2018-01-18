@@ -39,8 +39,8 @@ sos2900_packages <- c("tidyverse","gapminder", "here")
 to_be_installed <- sos2900_packages[!is.element(sos2900_packages,myinstalled)]
 
 ### Before installing the bulk of packages, make sure those without binaries are installed and compiled.
-# problem_pkgs <- c("pillar","digest")
-# install.packages(pkgs = problem_pkgs, quiet = T, type="source", dependencies=F)
+problem_pkgs <- c("pillar","digest")
+install.packages(pkgs = problem_pkgs, quiet = T, type="source", dependencies=F)
 
 if (length(to_be_installed)>0) {
     print("Trying to install missing packages")
