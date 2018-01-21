@@ -29,17 +29,19 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - R is very powerful, and allows us to manually compute
 everything we want if we choose to
+
 - For many of the methods we use, R has either the simplest or
 the only implementation.
+
 - A main tool among Data scientists
 
 # What do you need to know about R?
+
 - In this course not much.
     - Tiny bits of programming
     - Cookbook method
 
-    - Strongly advised to learn about R (or Python) if you
-want to do data science
+    - Strongly advised to learn about R (or Python) for DS
 
 # Let's get started
 
@@ -111,9 +113,47 @@ want to do data science
 ![](./materials/seminar-1-assignment.png)
 
 
+# How does data get into R?
+
+- Use *read.csv* or to read simple text files (or *data.table::fread*)
+
+- Convert from other software (Excel, Stata, etc.) using *readxl* or *haven*
+
+# Data frames (or tibbles)
+
+- Data sets is represented as *data frames*
+
+- R can deal with many data sets at once
+    - Data frames stored under different names
+    - Stata/SPSS: One data set at the time
+
+- For our purposes: 
+    - Summarize one data set using regression (old data, "training data")
+    - Predict on *another data set* (new data, "testing data")
+
+# Looking at a data frame
+
+![](./materials/seminar-1-looking.png)
+
+# More info about R for Data science
+
+- Enormous amount of material on internet
+
+- Look e.g. at this free book: http://r4ds.had.co.nz/
+
+- New relevant books:
+    - Kosuke Imai: **Quantitative data analysis**
+    - Kieran Healy: **Data visualization for the social sciences**
+    
 
 # Nano data science!
 
 - Let us do something REAL!
 
-
+    - Load data set, and store it in an object
+    - Look at data set
+    - Summarize data set
+    - Model data using linear regression
+    - Predict from model using same data
+    - Evaluate prediction
+    - Model again, but better
