@@ -59,10 +59,17 @@ the only implementation.
 - RStudio has 4 panels:
 
     - Console: This is the actual R window, you can enter commands here and execute them by pressing enter
-    - Source: This is where we can edit scripts. It is where you do most of your work Control-enter sends selected codes to the console
+    - Source: This is where we can edit scripts. It is where you do most of your work 
+        + Control-enter sends *selected* code to R (in the console)
+        + Control-shift-enter sends *entire* script to R (in the console)
     - Plots/Help: This is where plots and help pages will be shown
-    - Workspace: Shows which objects you currently have
-    - Anything following a # symbol is treated as a comment!## R Markdown
+    - Workspace: Shows which objects you currently have, working directory contents
+    - Anything following a # symbol is treated as a comment!
+    
+
+# RStudio
+
+![](./materials/seminar-1-rstudio.png)
 
 # R as calculator
 
@@ -115,9 +122,12 @@ the only implementation.
 
 # How does data get into R?
 
+- We can type it into ourselves
+    - Not going to work with data sets of interesting sizes.
+
 - Use *read.csv* or to read simple text files (or *data.table::fread*)
 
-- Convert from other software (Excel, Stata, etc.) using *readxl* or *haven*
+- Convert from other software (Excel, Stata, etc.) using R's *readxl* or *haven* libraries
 
 # Data frames (or tibbles)
 
@@ -140,8 +150,9 @@ the only implementation.
 - Enormous amount of material on internet
 
 - Look e.g. at this free book: http://r4ds.had.co.nz/
+    - A full course in using R for data science
 
-- New relevant books:
+- Many, many relevant books. Examples:
     - Kosuke Imai: **Quantitative data analysis**
     - Kieran Healy: **Data visualization for the social sciences**
     
