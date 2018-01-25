@@ -67,6 +67,8 @@ aplot <- ggplot(mtcars, aes(x=hp, y=mpg)) + geom_point()
 # That created the plot. Now look at it:
 aplot
 
+aplot + geom_smooth(method="lm")
+
 # There seems to be a relationship between hp and mpg. 
 # Stronger engines are more efficient??
 
@@ -77,12 +79,16 @@ small
 
 # Predict from model, and store in new variable
 mtcars$mpg_pred_small <- predict(small)
+
+
 # Look at the prediction
 summary(select(mtcars, mpg, mpg_pred_small))
 qplot(data = mtcars, mpg, mpg_pred_small)
 
+
 # Quantify the precision of the predicted values
 R2_Score(mtcars$mpg, mtcars$mpg_pred_small)
+
 RMSE(mtcars$mpg, mtcars$mpg_pred_small)
 
 # Ok, so let us try another model with lots of variables

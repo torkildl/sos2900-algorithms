@@ -1,6 +1,7 @@
+tex2pdf*
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-*.pdf
 *.Rproj
+*.html
