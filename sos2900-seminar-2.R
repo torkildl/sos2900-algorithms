@@ -8,6 +8,7 @@ library(tidyverse)
 library(gapminder)
 library(here)
 library(MLmetrics)
+<<<<<<< HEAD
 library(data.table)
 
 # Plan for seminar 2:
@@ -103,4 +104,41 @@ model_train <- lm(data=training, formula="ViolentCrimesPerPop ~ MedRent + PolicP
 # Why not use all the variables available in the data?
 # How to deal with overfitting resulting from including a large number of variables?
 # This is where tree-based methods enter the equation.
+=======
+
+### Read in the data we want to use
+thedata <- read.csv("https://raw.githubusercontent.com/torkildl/sos2900-algorithms/master/materials/community_crime.csv")
+
+ 
+
+
+summary(thedata)
+
+
+# Plan for seminar 2
+
+# Load the data on crime and communities
+
+# Inspect the data
+
+# Choose outcome: murder rate
+
+# Model murder rate with specifically chosen one or two characteristics
+
+# Predict on testing data
+
+# Examine prediction
+
+# Model again with two vars. students choose variables (supervised learning)
+
+# Predict on testing data
+
+# Examine predictions
+
+# Model again using as many as you'd like
+
+# Predict on testing data
+
+# examine predictions
+>>>>>>> 5e2640d3497c1694beaa6ce07d662d5117f378d8
 
