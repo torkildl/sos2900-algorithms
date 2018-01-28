@@ -103,4 +103,3 @@ model_train <- lm(data=training, formula="ViolentCrimesPerPop ~ MedRent + PolicP
 # Why not use all the variables available in the data?
 # How to deal with overfitting resulting from including a large number of variables?
 # This is where tree-based methods enter the equation.
-
