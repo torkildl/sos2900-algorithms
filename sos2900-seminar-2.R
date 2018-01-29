@@ -85,9 +85,11 @@ rmse_test
 r2_train
 r2_test
 
+
 # Model again with a larger set of variables. Students can choose variables.
 # 
 model_train <- lm(data=training, formula="ViolentCrimesPerPop ~ MedRent + PolicPerPop + pctUrban + NumUnderPov + TotalPctDiv")
+summary(model_train)
 
 # Predict on testing data
 # Examine predictions
