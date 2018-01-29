@@ -20,7 +20,7 @@ library(data.table)
 #
 
 # Load the data on crime and communities
-datadesc <- fread("https://raw.githubusercontent.com/torkildl/sos2900-algorithms/master/materials/communities.names", header<=F, skip=75, nrows = 203, drop=1, col.names=c("variable","varlabel"), showProgress = F)
+datadesc <- fread("https://raw.githubusercontent.com/torkildl/sos2900-algorithms/master/materials/communities.names", header=F, skip=75, nrows = 203, drop=1, col.names=c("variable","varlabel"), showProgress = F)
 thedata <- fread("https://raw.githubusercontent.com/torkildl/sos2900-algorithms/master/materials/communities.data", na.strings = "?", showProgress = F)
 names(thedata) <- datadesc$variable
 
