@@ -39,7 +39,8 @@ if (!exists("SOS2900START")) {
     myinstalled <- row.names(installed.packages())
     
     ### Required packages for course
-    sos2900_packages <- c("tidyverse","data.table","gapminder", "here", "MLmetrics")
+    sos2900_packages <- c("caret", "C50", "rpart", "rpart_plot", "randomForest", "tree","PASWR",
+                          "tidyverse","data.table","gapminder", "here", "MLmetrics")
     ### What needs to be installed, according to list above?
     to_be_installed <- sos2900_packages[!is.element(sos2900_packages,myinstalled)]
     
