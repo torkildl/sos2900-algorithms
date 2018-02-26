@@ -1,5 +1,5 @@
 ###
-### Twitter scraping in R
+### Twitter data in R
 ###
 ###
 .libPaths("C:/Users/Public/R/win-library/3.4")
@@ -156,7 +156,8 @@ df <- feelings_words %>%
     left_join(select(tweets, source, id, created), by="id") %>%
     mutate(random= runif(n=nrow(.),min = 0, max = 1)) %>%
     mutate(donald = ifelse(source=="Android",1,0)) %>%
-    mutate_at(vars(all_feelings), as.factor)
+    mutate_at(vars(c("donald",levels(all_feelings))), as.factor) %>%
+    mutate(yearmonth = year(created)*100 + (month(created)-(month(created) %% 3)))
 
 
 

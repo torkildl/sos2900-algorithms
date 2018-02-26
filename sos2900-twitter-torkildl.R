@@ -13,7 +13,7 @@ setup_twitter_oauth(twitter_consumer_key,
                     twitter_access_token_secret)
 
 # Vi kan lett søke blant tweets
-sometweets <- purrr::map_df(searchTwitter("blurb", n = 100, resultType = "recent"), as.data.frame)
+sometweets <- purrr::map_df(searchTwitter("blurb", n = 10, resultType = "recent"), as.data.frame)
 
 
 # Her er noen brukernavn. La oss se nærmere på dem.
@@ -35,14 +35,8 @@ torkildl <- someusers$torkildl
 torkildl$id
 
 
-# Hvor raskt kan vi hente ut informasjon om hvem-som-følger-hvem?
-
-
-
-str(twitteR::getUser(torkildl$getFollowerIDs()[500]))
-
-map_df(torkildl$getFollowerIDs(), as.data.frame) 
-
+# torkildl's followers
+myfollowers <-map_df(torkildl$getFollowers(), as.data.frame)
 
 
 
