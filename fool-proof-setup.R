@@ -39,7 +39,7 @@ if (!exists("SOS2900START")) {
     myinstalled <- row.names(installed.packages())
     
     ### Required packages for course
-    sos2900_packages <- c("caret", "C50", "rpart", "rpart_plot", "randomForest", "tree","PASWR",
+    sos2900_packages <- c("caret", "C50", "rpart", "randomForest", "tree","PASWR",
                           "data.table","gapminder", "here", "MLmetrics", "twitteR", "lubridate", "scales", "tidytext",
                           "tidyverse","broom")
     ### What needs to be installed, according to list above?
